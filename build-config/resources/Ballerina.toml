@@ -1,0 +1,22 @@
+[package]
+distribution = "2201.8.0"
+org = "ballerinax"
+name = "gcloud.gpubsub"
+version = "@toml.version@"
+license = ["Apache-2.0"]
+authors = ["Ballerina"]
+keywords = ["Publish/Subscribe"]
+icon = "icon.png"
+repository = "https://github.com/ballerina-platform/module-ballerinax-gcloud.pubsub"
+
+[build-options]
+observabilityIncluded = true
+
+[platform.java17]
+graalvmCompatible = true
+
+[[platform.java17.dependency]]
+groupId = "com.google.cloud"
+artifactId = "google-cloud-pubsub"
+version = "1.126.6"
+path = "../native/build/libs/gcloud.gpubsub-native-0.1.0-SNAPSHOT.jar"
